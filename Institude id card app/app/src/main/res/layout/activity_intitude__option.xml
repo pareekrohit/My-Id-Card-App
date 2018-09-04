@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Intitude_Option">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/img_institudedetail"
+                android:text="Click here to fill institute detail"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#3744fa"/>
+
+            <Button
+                android:id="@+id/btnintituteDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Institute Detail"
+                android:layout_below="@+id/txt"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:background="#3744fa"
+                android:textColor="#ffffff"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:onClick="showInstitudeDetail"
+                />
+
+            <ImageView
+                android:id="@+id/img_institudedetail"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/institute_detail" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/img_template"
+                android:text="Click here for ID Card template"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#3744fa"/>
+
+            <Button
+                android:id="@+id/btnTemplate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select ID card Design"
+                android:layout_below="@+id/txt1"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:background="#3744fa"
+                android:textColor="#ffffff"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:onClick="showIDCardTemplate"
+                />
+
+            <TextView
+                android:id="@+id/txt_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(Please first fill Institude details then click on 'Select ID card Design')"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:layout_below="@+id/btnTemplate"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="5dp"
+                android:textAllCaps="false"
+                android:textColor="#f01b1b"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                />
+
+            <ImageView
+                android:id="@+id/img_template"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_above="@+id/txt_note"
+                android:src="@drawable/template_img" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!--Edit Institude Design -->
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--app:cardElevation="10dp">-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/txt2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toLeftOf="@+id/img_edit"-->
+                <!--android:text="Click here for Update institute details"-->
+                <!--android:textStyle="bold"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:paddingRight="4dp"-->
+                <!--android:textColor="#3744fa"/>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btnEdit"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Update Institute Details"-->
+                <!--android:layout_below="@+id/txt2"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:background="#3744fa"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:padding="10dp"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:textStyle="bold"-->
+
+                <!--/>-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/img_edit"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:src="@drawable/template_img" />-->
+        <!--</RelativeLayout>-->
+
+    <!--</android.support.v7.widget.CardView>-->
+
+</LinearLayout>

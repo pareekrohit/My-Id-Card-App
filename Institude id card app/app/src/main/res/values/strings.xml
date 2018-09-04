@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">My ID Card</string>
+    <string name="save"><font fgcolor="#ffffff"><u><b>SAVE</b></u></font></string>
+
+    <string name="full_name"><font size="13">Full Name(eg.Raj Vithal Patil)</font></string>
+
+    <string name="login">Already have an account?<u> Login here</u></string>
+
+    <string name="register">New Member?<u> Register here</u></string>
+
+    <string name="select_student"><font color="#4c67fa">Please select student</font></string>
+    <string name="student"><font color="#4c67fa">Your Selected Student is</font></string>
+
+    <string-array name="clasess">
+        <item>--Select--</item>
+        <item>I</item>
+        <item>II</item>
+        <item>III</item>
+        <item>IV</item>
+        <item>V</item>
+        <item>VI</item>
+        <item>VII</item>
+        <item>VIII</item>
+        <item>IX</item>
+        <item>X</item>
+        <item>XI</item>
+        <item>XII</item>
+    </string-array>
+
+
+    <string-array name="Division">
+        <item>--Select--</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+    </string-array>
+
+    <string-array name="blood">
+        <item>--Select--</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+
+    </string-array>
+
+
+</resources>

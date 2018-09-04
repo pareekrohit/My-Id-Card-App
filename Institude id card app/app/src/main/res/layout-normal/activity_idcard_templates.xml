@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".IDCardTemplates">
+
+    <LinearLayout
+        android:id="@+id/linearbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c4c4c4"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Prev"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Change the Id Card Template"
+            android:textColor="#FFFF0000"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:text="Next"
+            android:textAllCaps="false" />
+    </LinearLayout>
+    <!--<com.sothree.slidinguppanel.SlidingUpPanelLayout-->
+    <!--android:id="@+id/sliding_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="bottom"-->
+    <!--sothree:umanoPanelHeight="34dp"-->
+    <!--sothree:umanoShadowHeight="8dp">-->
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#658a8989"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            sothree:cardCornerRadius="25dp"
+            sothree:cardElevation="5dp">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                   >
+
+                    <LinearLayout
+                        android:id="@+id/linear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                       >
+
+                        <ImageView
+                            android:id="@+id/img_school_logo"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/school_logo" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtInstitudeName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginTop="10dp"
+
+                                android:layout_toRightOf="@id/img_school_logo"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:text="Bharati Vidypeeth"
+                                android:textAlignment="viewStart"
+                                android:textColor="#000000"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txtInstitudeAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txtInstitudeName"
+                                android:layout_marginLeft="4dp"
+                                android:layout_toRightOf="@+id/img_school_logo"
+                                android:ellipsize="end"
+                                android:maxLines="3"
+                                android:text="Bharti Vidyapeeth Bhavan,Rajwada Chowk, Sangli. 416416"
+                                android:textAlignment="viewStart"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_pic"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_below="@+id/linear"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/border_image"
+                        android:padding="1dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/b" />
+
+                    <TextView
+                        android:id="@+id/txtStudentName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_pic"
+                        android:layout_marginTop="3dp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="Raj Vithal Patil"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/Line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtStudentName"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="Class:"
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/spinnerClass"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtName"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1.4"
+                            android:text="X"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtDivision"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtName"
+                            android:layout_weight="0.8"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="Division:"
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/spinnerDivision"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtName"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1.2"
+                            android:text="B"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Line2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Line1"
+                        android:layout_marginTop="6dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="DOB:"
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtDob"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtName"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1.4"
+                            android:text="2001-04-16"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtName"
+                            android:layout_weight="0.8"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="Blood Group :"
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtbloodgrp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtName"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1.2"
+                            android:text="B+"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Line3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Line2"
+                        android:layout_marginTop="6dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="Mobile :"
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtMobileno"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtName"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1.4"
+                            android:text="8233355587"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Line4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Line3"
+                        android:layout_marginTop="6dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="Address :"
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtStudentAddress"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtName"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1.4"
+                            android:ellipsize="end"
+                            android:maxLines="3"
+                            android:text=" Restaurant No. 2A, S. No. 33/1/1, Upper Ground Floor, Poorva Shrusthi Building C, Vadgaon Khurd, Pandurang Industrial Area, Nanded, Pune, Maharashtra 411041"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/Line5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Line4"
+                        android:layout_marginTop="6dp"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="4dp">
+
+                        <ImageView
+                            android:id="@+id/img_signature"
+                            android:layout_width="74dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="3dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/signature_img" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:text="Principal"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </ScrollView>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="270dp"-->
+    <!--android:background="#FFFFFF"-->
+    <!--android:orientation="vertical"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:paddingRight="10dp"-->
+    <!--android:paddingBottom="10dp">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="27dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:elevation="5dp"-->
+    <!--android:gravity="center"-->
+    <!--android:text="Slide Up the Panel!"-->
+    <!--android:textColor="#ff0000"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_apply"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Apply"-->
+    <!--android:layout_gravity="end"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--/>-->
+
+    <!--<Spinner-->
+    <!--android:id="@+id/spinnerInstitudeName"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:entries="@array/clasess"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:background="@drawable/border_spinner"-->
+    <!--android:padding="6dp"-->
+    <!--android:elevation="6dp"/>-->
+
+    <!--</LinearLayout>-->
+    <!--</com.sothree.slidinguppanel.SlidingUpPanelLayout>-->
+
+</LinearLayout>

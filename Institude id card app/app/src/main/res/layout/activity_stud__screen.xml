@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Stud_screen"
+    android:background="@drawable/student_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:background="#2a3cb0"
+            android:onClick="showstudentLogin"
+            android:layout_marginRight="3dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textStyle="bold"
+            android:background="#2a3cb0"
+            android:onClick="showStudentRegistration"
+            android:layout_marginLeft="3dp"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
